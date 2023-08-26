@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://blog.wrongsyntax.dev",
   author: "Uzair Tariq",
   desc: "blog page for wrongsyntax.dev",
-  title: "wrongsyntax blog",
+  title: "blog@wrongsyntax",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 7,
