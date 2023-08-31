@@ -16,7 +16,10 @@ const { noMarginTop = false } = Astro.props;
   <div class="footer-wrapper">
     <Socials centered />
     <div class="copyright-wrapper">
-      <span>Copyright (c) {currentYear} Uzair Tariq</span>
+      <p xmlns:cc="http://creativecommons.org/ns#" >Content © { currentYear } by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://wrongsyntax.dev">Uzair Tariq</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0</a></p>
+    </div>
+    <div class="copyright-wrapper">
+      <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
     </div>
   </div>
 </footer>
@@ -35,6 +38,7 @@ const { noMarginTop = false } = Astro.props;
     @apply scale-125;
   }
   .copyright-wrapper {
+    font-size: 80%;
     @apply my-2 flex flex-col items-center whitespace-nowrap sm:flex-row;
   }
   .separator {
